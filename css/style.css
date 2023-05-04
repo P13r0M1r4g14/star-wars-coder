@@ -165,7 +165,7 @@ footer div img{
 }
 
 /*media query*/
-@media screen and (max-width:950px;){
+@media screen and (max-width:950px){
     .gridGaleria{
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: 220px;
