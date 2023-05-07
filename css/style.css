@@ -245,3 +245,45 @@ footer div img{
 .productos div div a:hover{
     color: grey;
 }
+
+/*ofertas*/
+
+/*mainOfertas*/
+.ofertas .ofertContenedor{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.ofertas div div{
+    width: 300px;
+    height: 370px;
+    border: 1px black solid;
+    text-align: center;
+    margin: 20px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-caja-sombra: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-caja-sombra: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.ofertas div div img{
+    width: 100%;
+    height: 200px;
+}
+
+.ofertas div div a{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.ofertas div div a:hover{
+    color: grey;
+}
+
+
+
+
