@@ -84,7 +84,7 @@ header h1{
 .productosDestacados h2{
     text-align: center;
     background-color: black;
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     padding: 10px;
 }
@@ -164,7 +164,7 @@ footer div img{
     margin: 20px;
 }
 
-/*media query*/
+/*media query index*/
 @media screen and (max-width:950px){
     .gridGaleria{
         grid-template-columns: repeat(2,1fr);
@@ -202,9 +202,26 @@ footer div img{
 
     header nav ul li{
         margin: 5px;
-
     }
 }
+
+/*media query productos*/
+
+@media screen and (max-width:450px){
+    header nav ul{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul li{
+        margin: 5px;
+    }
+}
+
+
+
+
+
 
 
 /*productos*/
