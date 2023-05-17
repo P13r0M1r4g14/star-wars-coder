@@ -228,16 +228,12 @@ footer div img{
 /*main*/
 
 
-.productos{
+.bodyProductos{
     background-image: url("../img/kProductos.png");
     width: 100%;
     height: 500px;
     background-position: center;
     color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .productos .prodContenedor{
@@ -251,9 +247,6 @@ footer div img{
     border: 1px black solid;
     text-align: center;
     margin: 20px;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
--webkit-caja-sombra: 10px 10px 5px 0px rgba(0,0,0,0.75);
--moz-caja-sombra: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
 .productos div div img{
