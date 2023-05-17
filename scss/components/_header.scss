@@ -1,0 +1,39 @@
+header{
+    background-color: black;
+    position: sticky;
+    top: 0;
+    display:flex;
+    justify-content: space-between;
+    z-index: 10;
+    h1{
+        font-style: italic;
+        font-weight: 600;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 20px;
+        color: white;
+        display: flex;
+        span{
+            color: yellow;
+
+        }
+    }
+    nav{
+        ul{
+            list-style: none;
+            display: flex;
+
+            li{
+                margin: 15px 5px 15px 5px;
+                a{
+                    text-decoration: none;
+                    color: rgb(255, 255, 255);
+                    transition: 0.5s;
+                    &:hover{
+                        color: blue;
+                    }
+                }
+
+            }
+        }
+    }
+}

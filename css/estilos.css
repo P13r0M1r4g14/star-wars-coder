@@ -1,0 +1,57 @@
+/*---Paleta de colores---*/
+/*lista*/
+header {
+  background-color: black;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10; }
+  header h1 {
+    font-style: italic;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: white;
+    display: flex; }
+    header h1 span {
+      color: yellow; }
+  header nav ul {
+    list-style: none;
+    display: flex; }
+    header nav ul li {
+      margin: 15px 5px 15px 5px; }
+      header nav ul li a {
+        text-decoration: none;
+        color: white;
+        transition: 0.5s; }
+        header nav ul li a:hover {
+          color: blue; }
+
+footer div img {
+  margin: 20px; }
+
+@media screen and (max-width: 950px) {
+  .griGaleria {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 220px; }
+    .griGaleria .gridItem {
+      grid-column: span 1;
+      grid-row: span 1; } }
+
+@media screen and (max-width: 700px) {
+  header {
+    flex-direction: column;
+    position: static; } }
+
+@media screen and (max-width: 450px) {
+  .gridGaleria {
+    grid-template-columns: span 1; }
+    .gridGaleria .gridItem {
+      grid-column: span 1;
+      grid-row: span 1; }
+  header nav ul {
+    flex-direction: column;
+    text-align: center; }
+  header nav ul li {
+    margin: 5px; } }
