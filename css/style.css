@@ -1,5 +1,5 @@
 
-/*index*/
+/*index (listo)*/
 
 .hero h2{
     color:goldenrod;
@@ -162,7 +162,7 @@ footer div img{
 }
 
 
-/*media query index*/
+/*media query index(lista)*/
 @media screen and (max-width:950px){
     .gridGaleria{
         grid-template-columns: repeat(2,1fr);
@@ -201,23 +201,11 @@ footer div img{
     header nav ul li{
         margin: 5px;
     }
-}
 
-/*media query productos*/
-
-@media screen and (max-width:450px){
-    header nav ul{
-        flex-direction: column;
+    .hero h2{
         text-align: center;
     }
-
-    header nav ul li{
-        margin: 5px;
-    }
 }
-
-
-
 
 
 
@@ -234,6 +222,8 @@ footer div img{
     height: 500px;
     background-position: center;
     color: white;
+    background-repeat: no-repeat;
+    background-size: 2300px;
 }
 
 .productos .prodContenedor{
@@ -247,6 +237,7 @@ footer div img{
     border: 1px black solid;
     text-align: center;
     margin: 20px;
+    background-color: white;
 }
 
 .productos div div img{
@@ -267,6 +258,47 @@ footer div img{
     color: grey;
 }
 
+.productos div div h3{
+    color: black;
+}
+
+
+/*media query productos*/
+
+@media screen and (max-width:700px){
+    .bodyProductos{
+        background-image: url("../img/kProductos.png");
+        width: 100%;
+        height: 1300px;
+        background-position: center;
+        color: white;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (max-width:450px){
+    header nav ul{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul li{
+        margin: 5px;
+    }
+
+    .bodyProductos{
+        background-image: url("../img/kProductos.png");
+        width: 100%;
+        height: 2000px;
+        background-position: center;
+        color: white;
+        background-repeat: no-repeat;
+    }
+}
+
+
+
+
 /*ofertas*/
 
 /*mainOfertas*/
@@ -282,9 +314,7 @@ footer div img{
     border: 1px black solid;
     text-align: center;
     margin: 20px;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
--webkit-caja-sombra: 10px 10px 5px 0px rgba(0,0,0,0.75);
--moz-caja-sombra: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    background-color: white;
 }
 
 .ofertas div div img{
@@ -305,6 +335,54 @@ footer div img{
     color: grey;
 }
 
+.bodyOfertas{
+    background-image: url("../img/mOfertas.webp");
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: 2300px;
+}
+
+.ofertas div div h3{
+    color: black;
+}
+
+/*media query oferta*/
+
+@media screen and (max-width:700px){
+    .bodyOfertas{
+        background-image: url("../img/mOfertas.webp");
+        width: 100%;
+        height: 1300px;
+        background-position: center;
+        color: white;
+        background-repeat: no-repeat;
+    }
+
+}
+
+
+
+
+/* AcercaDeNosotros */
+
+/*main*/
+
+.mainAcercaDeNosotros section{
+    text-align: center;
+}
+
+.bodyAcercaDe{
+    background-image: url("../img/fAcercaDeNosotros.jpeg");
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: 2600px;
+}
 
 
 
