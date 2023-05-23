@@ -1,5 +1,44 @@
 /*---Paleta de colores---*/
 /*lista*/
+.boton {
+  background-color: black;
+  color: white; }
+
+/*EXTENDS*/
+/* %=placeholder*/
+main .productos .prodContenedor, main .ofertas .ofertContenedor {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
+/*mixin*/
+.bodyProductos {
+  background-image: url("../img/kProductos.png");
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: 2300px; }
+
+.bodyOfertas {
+  background-image: url("../img/mOfertas.webp");
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: 2300px; }
+
+.bodyAcercaDe {
+  background-image: url("../img/fAcercaDeNosotros.jpeg");
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: 2600px; }
+
 header {
   background-color: black;
   position: sticky;
@@ -28,9 +67,142 @@ header {
         header nav ul li a:hover {
           color: blue; }
 
+/*main index*/
+main .hero {
+  background-image: url("../img/StarWarsLegionDiorama.png.jpg");
+  width: 100%;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  main .hero h2 {
+    color: orange;
+    font-size: 70px;
+    border: 2px solid orange;
+    padding: 20px; }
+  main .hero p {
+    color: orange;
+    font-size: 40px; }
+
+main .productosDestacados h2 {
+  text-align: center;
+  background-color: black;
+  font-size: 20px;
+  color: white;
+  padding: 10px; }
+
+main .productosDestacados .productoContenedor {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  main .productosDestacados .productoContenedor .box {
+    width: 300px;
+    height: 370px;
+    border: 1px black;
+    text-align: center;
+    margin: 20px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-caja-sombra: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-caja-sombra: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
+    main .productosDestacados .productoContenedor .box img {
+      width: 100%;
+      height: 270px; }
+    main .productosDestacados .productoContenedor .box h3 {
+      font-size: 20px; }
+    main .productosDestacados .productoContenedor .box .boton {
+      background-color: black;
+      text-align: center;
+      color: white;
+      padding: 10px;
+      text-decoration: none;
+      transition: 0.5s; }
+      main .productosDestacados .productoContenedor .box .boton:hover {
+        color: grey; }
+
+main .gridGaleria {
+  width: 100%;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 250px;
+  gap: 15px; }
+  main .gridGaleria .gridItem {
+    position: relative; }
+    main .gridGaleria .gridItem img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      -webkit-caja-sombra: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      -moz-caja-sombra: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
+    main .gridGaleria .gridItem h3 {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.756);
+      color: white;
+      text-align: center; }
+
+/*main productos*/
+main .productos .prodContenedor .box {
+  width: 300px;
+  height: 370px;
+  border: 1px black;
+  text-align: center;
+  margin: 20px;
+  background-color: white; }
+  main .productos .prodContenedor .box img {
+    width: 100%;
+    height: 250px; }
+  main .productos .prodContenedor .box h3 {
+    color: black; }
+  main .productos .prodContenedor .box .boton {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    transition: 0.5s; }
+    main .productos .prodContenedor .box .boton:hover {
+      color: grey; }
+
+/*mainOfertas*/
+main .ofertas .ofertContenedor .box {
+  width: 300px;
+  height: 370px;
+  border: 1px black;
+  text-align: center;
+  margin: 20px;
+  background-color: white; }
+  main .ofertas .ofertContenedor .box img {
+    width: 100%;
+    height: 200px; }
+  main .ofertas .ofertContenedor .box h3 {
+    color: black; }
+  main .ofertas .ofertContenedor .box .boton {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    transition: 0.5s; }
+    main .ofertas .ofertContenedor .box .boton:hover {
+      color: grey; }
+
+/*main acerca de nosotros*/
+.mainAcercaDeNosotros section {
+  text-align: center; }
+
 footer div img {
   margin: 20px; }
 
+/*media query index*/
 @media screen and (max-width: 950px) {
   .griGaleria {
     grid-template-columns: repeat(2, 1fr);
@@ -45,13 +217,69 @@ footer div img {
     position: static; } }
 
 @media screen and (max-width: 450px) {
-  .gridGaleria {
-    grid-template-columns: span 1; }
-    .gridGaleria .gridItem {
-      grid-column: span 1;
-      grid-row: span 1; }
   header nav ul {
     flex-direction: column;
     text-align: center; }
-  header nav ul li {
-    margin: 5px; } }
+    header nav ul li {
+      margin: 5px; }
+  main .hero h2 {
+    text-align: center; }
+  main .gridGaleria {
+    grid-template-columns: span 1; }
+    main .gridGaleria .gridItem {
+      grid-column: span 1;
+      grid-row: span 1; } }
+
+/*media query productos*/
+@media screen and (max-width: 700px) {
+  .bodyProductos {
+    background-image: url("../img/kProductos.png");
+    width: 100%;
+    height: 1300px;
+    background-position: center;
+    color: white;
+    background-repeat: no-repeat; } }
+
+@media screen and (max-width: 450px) {
+  .bodyProductos {
+    background-image: url("../img/kProductos2.jpg");
+    width: 100%;
+    height: 2650px;
+    background-position: center;
+    color: white;
+    background-size: cover; }
+    .bodyProductos header nav ul {
+      flex-direction: column;
+      text-align: center; }
+      .bodyProductos header nav ul li {
+        margin: 5px; } }
+
+/*media query oferta*/
+@media screen and (max-width: 700px) {
+  .bodyOfertas {
+    background-image: url("../img/mOfertas.webp");
+    width: 100%;
+    height: 1300px;
+    background-position: center;
+    color: white;
+    background-repeat: no-repeat; } }
+
+@media screen and (max-width: 450px) {
+  .bodyOfertas {
+    background-image: url("../img/mOfertas2.webp");
+    width: 100%;
+    height: 2700px;
+    background-position: center;
+    color: white;
+    background-size: cover; } }
+
+/*media query acerca de nosotros*/
+@media screen and (max-width: 700px) {
+  .bodyAcercaDe {
+    background-image: url("../img/fAcercaDeNosotros.jpeg");
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: 2500px; } }

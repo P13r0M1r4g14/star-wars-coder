@@ -1,6 +1,7 @@
 /*---Paleta de colores---*/
-$color-principal: black;
-$color-secundario: orange;
+$colorUno: black;
+$colorDos: goldenrod;
+$colorTres: orange;
 
 /*lista*/
 
@@ -10,28 +11,35 @@ $font-size:
 20px,
 30px;
 
-/*EXTENDS*/
+//*mapas
 
+$boton:(
+    bg-boton: black,
+    color-text: white,
+);
+
+.boton{
+    background-color: map-get($boton, bg-boton);
+    color: map-get($boton, color-text )
+} 
+
+
+/*EXTENDS*/
 /* %=placeholder*/
 
-
-/*condicionales*/
-/*operadores de comparacion*/
-// = (asignacion)
-// == ( que es igual)
-// !=es diferente
-// > mayor que 
-// < menor que
-// >= mayor o igual
-// <= menor o igual
-
-/*
-    if(condicional{
-        se ejecuta esto
-    }else{
-        se ejecuta esto otro
-    }
-*/
+%flex{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
 
-// bucles
+/*mixin*/
+
+@mixin flex ($flex, $justify, $wrap){
+    display: $flex;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+}
+
+

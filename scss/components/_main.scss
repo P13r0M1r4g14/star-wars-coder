@@ -1,0 +1,176 @@
+/*main index*/
+main{
+    .hero{    
+        background-image: url("../img/StarWarsLegionDiorama.png.jpg");
+        width: 100%;
+        height: 600px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        color: white;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h2{
+            color: $colorTres;
+            font-size: 70px;
+            border: 2px solid $colorTres;
+            padding: 20px;
+        }
+        p{
+            color: $colorTres;
+            font-size: 40px;
+        }
+    }
+    .productosDestacados{
+        h2{
+            text-align: center;
+            background-color: $colorUno;
+            font-size: 20px;
+            color: white;
+            padding: 10px;
+        }
+        .productoContenedor{
+            @include flex(flex,space-around,wrap)
+            .box{
+                width: 300px;
+                height: 370px;
+                border: 1px $colorUno;
+                text-align: center;
+                margin: 20px;
+                box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+                -webkit-caja-sombra: 10px 10px 5px 0px rgba(0,0,0,0.75);
+                -moz-caja-sombra: 10px 10px 5px 0px rgba(0,0,0,0.75);
+                img{
+                    width: 100%;
+                    height: 270px;
+                }
+                h3{
+                    font-size: 20px;
+                }
+                .boton{
+                    background-color: $colorUno;
+                    text-align: center;
+                    color: white;
+                    padding: 10px;
+                    text-decoration: none;
+                    transition: 0.5s;
+                    &:hover{
+                        color: grey;
+                    }
+                }
+            }
+        }
+    }
+    .gridGaleria{
+        width: 100%;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-auto-rows: 250px;
+        gap: 15px;
+        .gridItem{
+            position: relative;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+                -webkit-caja-sombra: 10px 10px 5px 0px rgba(0,0,0,0.75);
+                -moz-caja-sombra: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            }
+            h3{
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.756);
+                color: white;
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+/*main productos*/
+main{
+    .productos{
+        .prodContenedor{
+            @extend %flex;
+            .box{
+                width: 300px;
+                height: 370px;
+                border: 1px $colorUno;
+                text-align: center;
+                margin: 20px;
+                background-color: white;
+                img{
+                    width: 100%;
+                    height: 250px;
+                }
+                h3{
+                    color: $colorUno;
+                }
+                .boton{
+                    background-color: $colorUno;
+                    text-align: center;
+                    color: white;
+                    padding: 10px;
+                    text-decoration: none;
+                    transition: 0.5s;
+                    &:hover{
+                        color: grey;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*mainOfertas*/
+
+main{
+    .ofertas{
+        .ofertContenedor{
+            @extend %flex;
+            .box{
+                width: 300px;
+                height: 370px;
+                border: 1px $colorUno;
+                text-align: center;
+                margin: 20px;
+                background-color: white;
+                img{
+                    width: 100%;
+                    height: 200px;
+                }
+                h3{
+                    color: $colorUno;
+                }
+                .boton{
+                    background-color: $colorUno;
+                    text-align: center;
+                    color: white;
+                    padding: 10px;
+                    text-decoration: none;
+                    transition: 0.5s;
+                    &:hover{
+                        color: grey;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*main acerca de nosotros*/
+
+.mainAcercaDeNosotros{
+    section{
+        text-align: center;
+    }
+}
