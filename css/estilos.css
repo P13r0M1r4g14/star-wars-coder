@@ -199,8 +199,11 @@ main .ofertas .ofertContenedor .box {
 .mainAcercaDeNosotros section {
   text-align: center; }
 
-footer div img {
-  margin: 20px; }
+footer div {
+  display: flex;
+  justify-content: center; }
+  footer div img {
+    margin: 20px; }
 
 /*media query index*/
 @media screen and (max-width: 950px) {
